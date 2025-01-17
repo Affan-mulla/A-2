@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <p>fadeToggle() with different speed parameters.</p>
+    <button>Click to fade in/out boxes</button><br><br>
+    <div id="div1" style="width:100px;height:100px;background-color:#6D5050;"></div>
+    <br>
+    <div id="div2" style="width:100px;height:100px;background-color:#42D5A9;"></div>
+    <br>
+    <div id="div3" style="width:100px;height:100px;background-color:#8942D5;"></div>
+
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#div1").fadeToggle(1000)
+                $("#div2").delay(1000).fadeToggle(2000)
+                $("#div3").delay(2000).fadeToggle(3000)
+            })
+        })
+    </script>
+</body>
+
+</html>

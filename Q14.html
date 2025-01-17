@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+
+    <style>
+        .container {
+            display: flex;
+        }
+        .loader {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(40, 126, 254);
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn1">Slide down</button>
+    <button class="btn2">Slide up</button>
+    <br><br>
+    <div class="container">
+        <div class="loader" id="L1"></div>
+        <div class="loader" id="L2"></div>
+        <div class="loader" id="L3"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $(".btn1").click(function() {
+                $("#L1").slideDown()
+                $("#L2").delay(200).slideDown()
+                $("#L3").delay(400).slideDown()
+            })
+            $(".btn2").click(function() {
+                $("#L3").slideUp()
+                $("#L2").delay(200).slideUp()
+                $("#L1").delay(400).slideUp()
+            })
+        })
+    </script>
+</body>
+
+</html>
