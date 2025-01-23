@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        .container {
+            padding: 10px;
+            background-color: rgb(87, 87, 87);
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+        .product-container {
+            display: flex;
+            gap: 10px;
+            background-color: rgb(46, 46, 46);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        img {
+            height: 180px;
+            width: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .detail{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        button {
+            background-color: #0088ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0a82eb;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-container">
+            <div>
+                <img src="/Images/goingmerry.png" alt="" >
+            </div>
+            <div class="detail">
+                <div >
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio impedit voluptatibus, commodi atque ut saepe repellendus quibusdam inventore eius tempora, aperiam suscipit perspiciatis maiores incidunt quaerat distinctio laborum animi. Rem.</p>
+                    
+                </div>
+               <h2>$990</h2>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="product-container">
+            <div>
+                <img src="/Images/Lord Aizen.png" alt="" >
+            </div>
+            <div class="detail">
+                <div >
+                    <h2>Lord Aizen</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio impedit voluptatibus, commodi atque ut saepe repellendus quibusdam inventore eius tempora, aperiam suscipit perspiciatis maiores incidunt quaerat distinctio laborum animi. Rem.</p>
+                </div>
+               <h2>$?</h2>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="product-container">
+            <div>
+                <img src="/Images/miyamoto musashi.jpeg" alt="" >
+            </div>
+            <div class="detail">
+                <div >
+                    <h2>Miyamoto Musashi</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio impedit voluptatibus, commodi atque ut saepe repellendus quibusdam inventore eius tempora, aperiam suscipit perspiciatis maiores incidunt quaerat distinctio laborum animi. Rem.</p>
+                    
+                </div>
+               <h2>$ ?</h2>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="product-container">
+            <div>
+                <img src="/Images/purple aesthetic.jpg" alt="" >
+            </div>
+            <div class="detail">
+                <div >
+                    <h2>Purple Aesthetic</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio impedit voluptatibus, commodi atque ut saepe repellendus quibusdam inventore eius tempora, aperiam suscipit perspiciatis maiores incidunt quaerat distinctio laborum animi. Rem.</p>
+                </div>
+               <h2>$9.99</h2>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
