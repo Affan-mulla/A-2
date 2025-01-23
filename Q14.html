@@ -10,12 +10,30 @@
     <style>
         .container {
             display: flex;
+            height: 100px;
         }
-        .loader {
+        #L1,#L2,#L3 {
             height: 20px;
             width: 20px;
-            background-color: rgb(40, 126, 254);
+            background-color: #287efe;
             margin: 10px;
+            border-radius: 100%;
+            position: relative;
+            
+        }
+        #L1 {
+            animation: loader .5s  infinite ease-in;
+        }
+        #L2 {
+            animation: loader .5s  .5s infinite ease-in;
+        }
+        #L3 {
+            animation: loader .5s  1s infinite ease-in;
+        }
+
+        @keyframes loader {
+            from {top: 10px;}
+            to {top : 0px;}
         }
     </style>
 </head>
@@ -26,23 +44,21 @@
     <button class="btn2">Slide up</button>
     <br><br>
     <div class="container">
-        <div class="loader" id="L1"></div>
-        <div class="loader" id="L2"></div>
-        <div class="loader" id="L3"></div>
+        <div id="L1"></div>
+        <div id="L2"></div>
+        <div id="L3"></div>
     </div>
 
     <script>
         $(document).ready(function() {
             $(".btn1").click(function() {
-                $("#L1").slideDown()
-                $("#L2").delay(200).slideDown()
-                $("#L3").delay(400).slideDown()
+                $("#L1").animate({top : "20px"},100)
             })
-            $(".btn2").click(function() {
-                $("#L3").slideUp()
-                $("#L2").delay(200).slideUp()
-                $("#L1").delay(400).slideUp()
-            })
+            // $(".btn2").click(function() {
+            //     $("#L3").slideUp()
+            //     $("#L2").delay(200).slideUp()
+            //     $("#L1").delay(400).slideUp()
+            // })
         })
     </script>
 </body>
