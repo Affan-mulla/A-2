@@ -1,51 +1,26 @@
-const Product = [
-    {
-        name: "Air Max 90",
-        price: 120,
-        img: "Shoes/Shoe1.png"
-    },
-    {
-        name: "Air Force 1",
-        price: 110,
-        img: "Shoes/shoe2.png"
-    },
-    {
-        name: "Air Zoom Pegasus",
-        price: 130,
-        img: "Shoes/shoe3.png"
-    },
-    {
-        name: "React Infinity Run",
-        price: 160,
-        img: "Shoes/shoe4.png"
-    },
-    {
-        name: "Blazer Mid '77",
-        price: 100,
-        img: "Shoes/shoe5.png"
-    },
-    {
-        name: "Air VaporMax",
-        price: 190,
-        img: "Shoes/shoe6.png"
-    },
-    {
-        name: "Court Vision Low",
-        price: 75,
-        img: "Shoes/shoe7.png"
-    },
-    {
-        name: "ZoomX Vaporfly",
-        price: 250,
-        img: "Shoes/shoe8.png"
-    },
-    
-];
-
 let list = document.querySelector(".list-all");
 
+function httpServer() {
+    let xHttp = new XMLHttpRequest();
+    xHttp.onload = function() {
+        if (this.status === 200) {
+            let items = this.responseXML.children[0].children
+            console.log(items[0].children[0].textContent,items[0].children[1].textContent,items[0].children[2].textContent);
+            
+            
+            for (let i = 0; i < items.length; i++) {
+                createProduct(items[i].children[0].textContent,items[i].children[1].textContent,items[i].children[2].textContent)
+            } 
+        }
+    }
+    xHttp.open("GET", "product.xml",false);
+    xHttp.send();
+}
+httpServer()
 
-function createProduct(ImgLink,name,price){
+
+
+function createProduct(name,price,ImgLink){
     const product = document.createElement("li")
     
     product.setAttribute("class","product-container")
@@ -86,7 +61,4 @@ function createProduct(ImgLink,name,price){
 
 }
 
-for (const element of Product) {
-    createProduct(element.img,element.name,element.price)
-}
 
