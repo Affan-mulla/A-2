@@ -1,84 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Product>
-    <Item>
+    <Item id="1">
         <Name>Air Max 90</Name>
         <Price>120</Price>
         <Image>Shoes/Shoe1.png</Image>
     </Item>
-    <Item>
+    <Item id="2">
         <Name>Air Force 1</Name>
         <Price>110</Price>
         <Image>Shoes/shoe2.png</Image>
     </Item>
-    <Item>
+    <Item id="3">
         <Name>Air Zoom Pegasus</Name>
         <Price>130</Price>
         <Image>Shoes/shoe3.png</Image>
     </Item>
-    <Item>
+    <Item id="4">
         <Name>React Infinity Run</Name>
         <Price>160</Price>
         <Image>Shoes/shoe4.png</Image>
     </Item>
-    <Item>
+    <Item id="5">
         <Name>Blazer Mid '77</Name>
         <Price>100</Price>
         <Image>Shoes/shoe5.png</Image>
     </Item>
-    <Item>
+    <Item id="6">
         <Name>Air VaporMax</Name>
         <Price>190</Price>
         <Image>Shoes/shoe6.png</Image>
     </Item>
-    <Item>
+    <Item id="7">
         <Name>Court Vision Low</Name>
         <Price>75</Price>
         <Image>Shoes/shoe7.png</Image>
     </Item>
-    <Item>
+    <Item id="8">
         <Name>ZoomX Vaporfly</Name>
         <Price>250</Price>
         <Image>Shoes/shoe8.png</Image>
     </Item>
-    <Item>
+    <Item id="9">
         <Name>Air Max 97</Name>
         <Price>170</Price>
         <Image>Shoes/shoe1.png</Image>
     </Item>
-    <Item>
+    <Item id="10">
         <Name>Air Jordan 1</Name>
         <Price>200</Price>
         <Image>Shoes/shoe2.png</Image>
     </Item>
-    <Item>
+    <Item id="11">
         <Name>Air Huarache</Name>
         <Price>115</Price>
         <Image>Shoes/shoe3.png</Image>
     </Item>
-    <Item>
+    <Item id="12">
         <Name>React Presto</Name>
         <Price>130</Price>
         <Image>Shoes/shoe4.png</Image>
     </Item>
-    <Item>
+    <Item id="13">
         <Name>Air Monarch</Name>
         <Price>55</Price>
         <Image>Shoes/shoe5.png</Image>
     </Item>
-    <Item>
+    <Item id="14">
         <Name>Air Presto</Name>
         <Price>140</Price>
         <Image>Shoes/shoe6.png</Image>
     </Item>
-    <Item>
+    <Item id="15">
         <Name>Air Tailwind</Name>
         <Price>100</Price>
         <Image>Shoes/shoe7.png</Image>
     </Item>
-    <Item>
+    <Item id="16">
         <Name>Zoom Fly 3</Name>
         <Price>160</Price>
         <Image>Shoes/shoe8.png</Image>
     </Item>
 </Product>
-

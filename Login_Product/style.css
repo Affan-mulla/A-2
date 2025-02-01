@@ -20,8 +20,9 @@
 }
 input {
   outline: 0;
+  background-color: white;
   border: 0;
-  padding: 10px;
+  padding:0 10px ;
   width: 300px;
   font-size: medium;
 }
@@ -32,9 +33,12 @@ input {
   background-color: rgb(238, 248, 255);
   align-items: center;
   justify-content: space-around;
+  position: fixed;
+  z-index: 1000;
 }
 
 .banner {
+  padding-top: 4rem;
 }
 #ban {
   height: 400px;
@@ -97,6 +101,7 @@ input {
 }
 .product{
   padding:0 10px;
+  min-height: 200px;
 }
 .product-container {
   display: flex;
@@ -121,7 +126,7 @@ input {
   justify-content: space-between;
 }
 
-button {
+#buy-btn {
   background-color: #0088ff;
   color: white;
   padding: 10px 20px;
@@ -129,10 +134,19 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
-button:hover {
+#buy-btn:hover {
   background-color: #0a82eb;
 }
-
+#search-btn {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 500px) {
   .product-container {
     flex-direction: column;

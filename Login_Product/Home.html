@@ -14,13 +14,12 @@
                     <img src="Shoes/logo.png" height="30" alt="">
                 </div>
                 <div class="inp">
-                    <input type="text" name="" id="" placeholder="Find your pair">
-                    <img src="Shoes/search-286.svg" alt="" height="30">
+                    <input type="search" name="" id="input" placeholder="Find your pair" onchange="search()">
+                    <button id="search-btn" onclick="search()"><img src="Shoes/search-286.svg" alt="" height="30"></button>
                 </div>
                 <div style="display: flex; gap: 10px; align-items: center;">
-                    <a href=""><img src="Images/Lord Aizen.png" style="border-radius: 100%; aspect-ratio: 1/1; object-fit: cover;" alt="" height="40"></a>
-                    <a href=""><img src="Shoes/shopping_cart_icon_177373.png" alt="" height="35"></a>
-                    
+                    <div><img src="Images/Lord Aizen.png" style="border-radius: 100%; aspect-ratio: 1/1; object-fit: cover;" alt="" height="40"></div>
+                    <div href=""><img src="Shoes/shopping_cart_icon_177373.png" alt="" height="35"></div>
                 </div>
             </nav>
             <div class="banner">
@@ -31,19 +30,24 @@
                 </div>
                 <img src="Shoes/banner.jpg" alt="" id="ban">
             </div>
-
             <div class="shoe-display">
-                
                 <div class="product">
                     <h2>Shoes</h2>
                     <ul class="list-all">
-                        
-                        
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div style="text-align: center; padding: 10px; background-color: #252525; color: white;">
+            <p>&copy; 2025 Nike. All rights reserved.</p>
+            <div>
+                <a href="#" style="margin-right: 10px; color: white;">Privacy Policy</a>
+                <a href="#" style="color: white;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="Product.js"></script>
 </body>
