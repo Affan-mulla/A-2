@@ -29,17 +29,29 @@ function checkUser(userName) {
 function val() {
   let userName = document.getElementById("username").value;
   let password = document.getElementById("password").value;
-  if (userName.value == "") {
+  let email = document.getElementById("email").value;
+  let address = document.getElementById("address").value;
+  if (userName == "") {
     alert("please enter valid Username.");
     userName.focus();
     return false;
   }
-  if (password.value == "") {
+  if (email == "") {
+    alert("please enter valid Password.");
+    email.focus();
+    return false;
+  }
+  if (address == "") {
     alert("please enter valid Password.");
     password.focus();
     return false;
   }
-
+  
+  if (password == "") {
+    alert("please enter valid Password.");
+    password.focus();
+    return false;
+  }
   let check = checkUser(userName);
 
   if (!check) {

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <div class="container">
@@ -15,18 +17,35 @@
                 </div>
                 <div class="inp">
                     <input type="search" name="" id="input" placeholder="Find your pair" onchange="search()">
-                    <button id="search-btn" onclick="search()"><img src="Shoes/search-286.svg" alt="" height="30"></button>
+                    <button id="search-btn" onclick="search()"><img src="Shoes/search-286.svg" alt=""
+                            height="30"></button>
                 </div>
                 <div style="display: flex; gap: 10px; align-items: center;">
-                    <div><img src="Images/Lord Aizen.png" style="border-radius: 100%; aspect-ratio: 1/1; object-fit: cover;" alt="" height="40"></div>
-                    <div href=""><img src="Shoes/shopping_cart_icon_177373.png" alt="" height="35"></div>
+                    <div><img src="Images/Lord Aizen.png"
+                            style="border-radius: 100%; aspect-ratio: 1/1; object-fit: cover;" alt="" height="40"></div>
+                    <div style="cursor: pointer;" onclick="toggleWindow()">
+                        <img src="Shoes/shopping_cart_icon_177373.png" alt="" height="35">
+                        <span id="cart-quantity" class="qty"></span>
+                    </div>
+                    <div class="cart-container closeCart">
+                        <div class="head-cart">
+                            <button class="close-cart">✖</button>
+                            <h2>Cart</h2>
+                        </div>
+                        <div class="cart-product">
+                        </div>
+                        <div>
+                            <button class="Buy-btn-cart">Buy Now</button>
+                        </div>
+                    </div>
                 </div>
             </nav>
             <div class="banner">
                 <div class="ban-detail">
                     <h2>Days of</h2>
                     <h2 id="withus">Tommorow</h2>
-                    <p id="p">Find your perfect pair of shoes with us. We have a wide range of collection from the world's best brands. From casual wear to sports shoes, we have got you covered.</p>
+                    <p id="p">Find your perfect pair of shoes with us. We have a wide range of collection from the
+                        world's best brands. From casual wear to sports shoes, we have got you covered.</p>
                 </div>
                 <img src="Shoes/banner.jpg" alt="" id="ban">
             </div>
@@ -51,4 +70,5 @@
 
     <script src="Product.js"></script>
 </body>
+
 </html>
