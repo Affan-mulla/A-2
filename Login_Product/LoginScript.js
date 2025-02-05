@@ -3,7 +3,14 @@ function checkUser(userName) {
 
   if (data != null) {
     for (const user of data) {
+    
+      
       if (user.userName == userName) {
+        console.log(data);
+        
+        data = data.filter((item)=> item.userName != userName)
+        data.push(user)
+        localStorage.setItem("person",JSON.stringify(data))
         return { userName: user.userName, password: user.password };
       }
     }
@@ -32,6 +39,7 @@ function checkUserDetail({ userName, password }) {
 }
 
 function val() {
+ 
   let userName = document.getElementById("username");
   let password = document.getElementById("password");
   if (userName.value == "") {
@@ -39,6 +47,7 @@ function val() {
     userName.focus();
     return false;
   }
+ 
   if (password.value == "") {
     alert("please enter valid Password.");
     password.focus();
@@ -48,8 +57,10 @@ function val() {
   let authUser = checkUserDetail({ userName, password });
   console.log("auth", authUser);
 
+  
   if (authUser) {
-    window.location.href = "Product.html";
+    window.location.href = "Home.html";
   }
+ 
   return false;
 }

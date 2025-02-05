@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    
+
     <style>
-        a {
-            color: rgb(208, 0, 255);
+      a{
+            background: #0088ff;
+            padding: 0 5px;
+            border-radius: 5px;
+            color: #fff;
             font-weight: 700;
         }
-
         * {
             padding: 0;
             margin: 0;
@@ -23,19 +25,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(218, 218, 218);
-            background-image: url("Images/purple\ aesthetic.jpg");
+            background-image: url("Shoes/reg.jpg");
+
             background-size: cover;
-            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .wrapper {
             margin: 0 auto;
             min-width: 300px;
             border: 1px solid black;
-            background-color: rgba(255, 255, 255, 0.477);
+            backdrop-filter: blur(20px);
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
             height: 300px;
             display: flex;
             flex-direction: column;
@@ -73,18 +75,18 @@
         .inp {
             display: flex;
             flex-direction: column;
-
         }
 
         .head-detail {
             text-align: center;
         }
 
-        .userERR,.passERR {
+        .userERR,
+        .passERR {
             position: absolute;
             bottom: 0;
             background-color: rgb(255, 62, 62);
-            padding: 10px; 
+            padding: 10px;
             border-radius: 10px;
             right: 0;
             margin: 10px;
@@ -95,8 +97,9 @@
         @keyframes pop-up {
             0% {
                 opacity: 0;
-               
+
             }
+
             100% {
                 opacity: 1;
                 display: none;
@@ -112,7 +115,7 @@
                 <h1>Login</h1>
                 <p>Please enter your details.</p>
             </div>
-            <form  onsubmit="return val()">
+            <form onsubmit="return val()">
                 <div class="inp">
                     <label for="">Username</label>
                     <input type="text" name="username" placeholder="Username" id="username">
@@ -120,7 +123,9 @@
                 <div class="inp">
                     <label for="">Password</label>
                     <input type="password" name="password" placeholder="Password" id="password">
-                    <p>Don't have a account ?<a href="Register.html">Register</a></p>
+                    <div style="margin-top: 5px;">
+                        <p>Don't have a account ?<a href="Register.html">Register</a></p>
+                    </div>
                 </div>
                 <input type="submit" value="Login">
             </form>
@@ -137,6 +142,7 @@
 
     <script src="LoginScript.js"></script>
 
-   
+
 </body>
+
 </html>

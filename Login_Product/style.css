@@ -172,6 +172,17 @@ button{
   translate: 300px;
 }
 
+.total {
+  display: flex ;
+  width: 100%;
+  justify-content: space-around;
+  background: white;
+  padding: 10px;
+}
+.total > p {
+  font-weight: 600;
+}
+
 /* ********************************* */
 
 .list-item:hover {
@@ -266,6 +277,47 @@ button{
   justify-content: center;
   align-items: center;
 }
+
+/* pop - up */
+
+.buy-pop{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 9999999999;
+  background: #00000048;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.buy-container{
+  background: #e5e5e5;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 250px;
+}
+
+.done{
+  width: 100%;
+  background: #1281ff;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.buy-detail{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+#buy-img{
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/*  */
+
 @media screen and (max-width: 500px) {
   .product-container {
     flex-direction: column;

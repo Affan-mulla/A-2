@@ -21,7 +21,7 @@
                             height="30"></button>
                 </div>
                 <div style="display: flex; gap: 10px; align-items: center;">
-                    <div><img src="Images/Lord Aizen.png"
+                    <div class="profile-id"><img src="Images/Lord Aizen.png"
                             style="border-radius: 100%; aspect-ratio: 1/1; object-fit: cover;" alt="" height="40"></div>
                     <div style="cursor: pointer;" onclick="toggleWindow()">
                         <img src="Shoes/shopping_cart_icon_177373.png" alt="" height="35">
@@ -35,6 +35,10 @@
                         <div class="cart-product">
                         </div>
                         <div>
+                            <div class="total">
+                                <p>Total</p>
+                                <p id="total">$999</p>
+                            </div>
                             <button class="Buy-btn-cart">Buy Now</button>
                         </div>
                     </div>
@@ -57,16 +61,18 @@
                 </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div style="text-align: center; padding: 10px; background-color: #252525; color: white;">
-            <p>&copy; 2025 Nike. All rights reserved.</p>
-            <div>
-                <a href="#" style="margin-right: 10px; color: white;">Privacy Policy</a>
-                <a href="#" style="color: white;">Terms of Service</a>
+        <footer>
+            <div style="text-align: center; padding: 10px; background-color: #252525; color: white;">
+                <p>&copy; 2025 Nike. All rights reserved.</p>
+                <div>
+                    <a href="#" style="margin-right: 10px; color: white;">Privacy Policy</a>
+                    <a href="#" style="color: white;">Terms of Service</a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
+
 
     <script src="Product.js"></script>
 </body>

@@ -17,7 +17,7 @@
             justify-content: center;
             align-items: center;
             background-color: rgb(218, 218, 218);
-            background-image: url("Images/purple\ aesthetic.jpg");
+            background-image: url("Shoes/reg.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -26,9 +26,9 @@
             margin: 0 auto;
             min-width: 300px;
             border: 1px solid black;
-            background-color: rgba(255, 255, 255, 0.477);
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0,0,0,.2);
             min-height: 300px;
             display: flex;
             flex-direction: column;
@@ -49,9 +49,9 @@
         }
         input[type="submit"] {
             background-color: #0088ff;
+            border: .7px solid rgb(0, 49, 122);
             color: white;
             padding: 10px 20px;
-            border: none;
             border-radius: 5px;
             cursor: pointer;
         }
@@ -68,14 +68,17 @@
             text-align: center;
         }
         a{
-            color: rgb(208, 0, 255);
+            background: #0088ff;
+            padding: 0 5px;
+            border-radius: 5px;
+            color: #fff;
             font-weight: 700;
         }
 
         .pop-up {
             position: absolute;
             bottom: 0;
-            background-color: rgb(255, 62, 62);
+            background-color: rgb(255, 25, 25);
             padding: 10px; 
             border-radius: 10px;
             right: 0;
@@ -102,7 +105,7 @@
         <div class="wrapper">
             <div class="head-detail">
                 <h1>Register</h1>
-                <p>Please enter your details.</p>
+                <p>Create your account now.</p>
             </div>
             <form onsubmit="return val()">
                 <div class="inp">
@@ -120,7 +123,9 @@
                 <div class="inp">
                     <label for="">Password</label>
                     <input type="password" name="password" placeholder="Password" id="password">
-                    <p>Already have an account ?<a href="login.html">Login</a></p>
+                    <div style="margin-top: 5px;">
+                        <p>Already have an account ?<a href="login.html">Login</a></p>
+                    </div>
                 </div>
                 <input type="submit" value="Register">
             </form>
